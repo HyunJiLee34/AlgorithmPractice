@@ -16,8 +16,25 @@ for i in self_num:
 
 
 
+# # d(n)계산을 위한 함수 구현
+# def D(x):
+#     A = x
+#     for i in str(x):
+#         A += int(i)
+#     return A
 
+numbers = set(range(1,10001))
+a = set()
+for i in range(1, 10001):
+    A= i
+    for j in str(i):
+        A += int(j)
+    a.add(A)
 
+res = sorted(numbers - a)
+
+for i in res:
+    print(i)
 
 
 

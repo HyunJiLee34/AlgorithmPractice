@@ -11,6 +11,22 @@ for i in range(N):
 print(N)
 
 
+#2022-07-26#
+
+
+n= int(input())
+cnt=0
+for _ in range(n):
+    W = input()
+    L = []
+    for i in range(len(W)):
+        if W[i] not in L :
+            L.append(W[i])
+        elif W[i] in L and W[i-1]!= W[i]:
+            n-=1
+            break
+print(n)
+
 
 
 
