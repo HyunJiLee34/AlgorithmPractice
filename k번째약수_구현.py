@@ -1,15 +1,15 @@
-N,K= map(int, input().split())
-L = []
-for i in range(1, N+1):
-    if N%i == 0 :
-        L.append(i)
+# N,K= map(int, input().split())
+# L = []
+# for i in range(1, N+1):
+#     if N%i == 0 :
+#         L.append(i)
 
-if len(L)< K :
-    print(-1)
-else :
-    print(sorted(L)[K-1])
+# if len(L)< K :
+#     print(-1)
+# else :
+#     print(sorted(L)[K-1])
 
-#2번째 방법
+#2번째 방법#
 N,K = map(int, input().split())
 cnt=0
 for i in range(len(N)):
