@@ -12,6 +12,7 @@ def dfsf(start,group):
         if visited[i]== 0 :
             dfsf(i,-group) #인접한 노드는 그룹을 바꿔준다.
         elif visited[start] == visited[i]:
+            print(visited)
             print("NO")
             error=True
             return #재귀리턴
