@@ -34,7 +34,7 @@ def bfs() :
             if 0<=next_R<N and 0<=next_C<M and 0<=next_K<H :
                 if visited[next_R][next_C][next_K]==-1 and L[next_R][next_C][next_K]==0 :
                     visited[next_R][next_C][next_K] = visited[nowNode[0]][nowNode[1]][nowNode[2]] +1
-                    day = visited[next_R][next_C][next_K] #그대로 visited하면 안되는이유는?
+                    day = visited[next_R][next_C][next_K] 
                     q.append((next_R,next_C,next_K))
 
 def check_t():
